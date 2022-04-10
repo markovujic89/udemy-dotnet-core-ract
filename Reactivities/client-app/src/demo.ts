@@ -4,7 +4,7 @@ let data:number|string = 42;
 data = 'tt';
 
 
-interface Duck{
+export interface Duck{
     name: string;
     numberOfLegs: number;
     makeSound?: (sound: any) => void;
@@ -24,3 +24,5 @@ const duck2:Duck = {
 
 // typescript: call object which is possible undefinde. Use ! to prevent error.
 duck1.makeSound!("sound");
+
+export const  ducks = [duck1,duck2];
